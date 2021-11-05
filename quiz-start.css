@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.container {
+  position: static;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 70px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.column {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 90%;
+    padding: 0; }
+  .column {
+    margin-left: 4%; }
+  .column:first-child {
+    margin-left: 0; }
+
+  .full-width.column              { width: 100%; margin-left: 0; }
+
+  .one-half.column                { width: 48%; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-quarter.column             { width: 22%; }
+  .two-quarter.column             { width: 48%; }
+  .three-quarter.column           { width: 74%; }
+
+  .one-half.column                { width: 48%; }
+}
+
+.container:after,
+.row:after,
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: #444444;
+  background: no-repeat center/cover url('fundo_quiz.jpg');
+  margin: 0;
+}
+
+#título_quiz {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: dodgerblue;
+  text-shadow: 1px 1px 0 mediumblue, -1px 1px 0 mediumblue, 1px -1px 0 mediumblue, -1px -1px 0 mediumblue;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat';
+  color: #018fd0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 36px;
+  text-shadow: 1px 1px 0 mediumblue, -1px 1px 0 mediumblue, 1px -1px 0 mediumblue, -1px -1px 0 mediumblue;
+}
+
+h3 {
+  color: #5224a0;
+  font-size: 24px;
+}
+
+.questions_box {
+  background-color: CornflowerBlue;
+  padding: 60px;
+  text-align: justify;
+  max-width: 960px;
+}
+
+.button {
+  font-family: "Montserrat";
+  margin: 10px 0 0 0;
+  float: right;
+  cursor: pointer;
+  font-size: 1em;
+  border: none;
+  padding: 10px 15px;
+  line-height: 18px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  vertical-align: baseline;
+  background: #075da8;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+#answer_indicator {
+    height: 40px;
+    width: 40px;
+}
+
+#question-2, #question-3, #question-4, #question-5, #question-6, #question-7, #question-8, #question-9, #question-10, #question-11{
+  display: none;
+  align-items: center;
+}
+
+#progress_bar {
+  background-color: #018fd0;
+  width: 10%;
+  height: 10px;
+  transition: all 100ms ease-in-out;
+}
